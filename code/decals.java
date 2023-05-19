@@ -46,6 +46,7 @@ public class decals {
             }
 
             decalImage.drawImage(base, 0, 0, null);
+            usage[currDecal] = true;
 
         }
 
