@@ -11,19 +11,19 @@ Unlike the Python version, this creates images fast (goodbye Turtle, don't know 
 
 ### Usage
 
-Main Builder Program (`builder.java`)
+Main Builder Program (`builder.java`)<br>
 `java builder n`
 > Generates full images of the cans, with all features. n is the number of images to make. If an argument is not given, one image will be generated. Files saved to `(root folder)/output`
 
-Background Gradient Generator (`background.java`)
+Background Gradient Generator (`background.java`)<br>
 `java background`
 > Generates a random vertically linear gradient. Saves this to `(root folder for class file)/imageout`
 
-Can Colorizer (`canbody.java`)
+Can Colorizer (`canbody.java`)<br>
 `java builder hexcode`
 > Sets a color for the can body. The hexcode argument takes a hexadecimal color value to create a can body from. Saves this to `root folder for class file)/imageout`
 
-Sticker Generator (`decals.java`)
+Sticker Generator (`decals.java`)<br>
 `java decals n`
 > Generates a random set of decals/stickers with a random color each. n is the number of stickers to use (0-8) Saves this to `(root folder for class file)/imageout`
 
