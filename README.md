@@ -1,4 +1,7 @@
 # SoupProject-JavaRewrite
+
+As seen [here](https://youtu.be/uSPG51UXmLo)
+---
 Soup Project in all its glory. Better in every way than the [Python version](https://github.com/0ak0/SoupProject) I made.
 
 I completely understand that the way I handle files here is terrible. It works though, so out of fear of breaking things I am leaving it as is.
