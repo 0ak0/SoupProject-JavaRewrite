@@ -7,6 +7,9 @@ import java.io.IOException;
 
 
 public class decals {
+    final static String imagesPath =  ".." + File.separator + "images" + File.separator;
+    final static String decalsPath =  imagesPath + File.separator + "decals" + File.separator;
+    // final static String outputPath =  ".." + File.separator + "output" + File.separator;
 
     public static BufferedImage allStickers(int n) throws IOException {
 
@@ -35,7 +38,7 @@ public class decals {
             }
 
 
-            BufferedImage base = ImageIO.read(new File(".." + File.separator + ".." + File.separator + "images" + File.separator + "decals" + File.separator + "" + currDecal + ".png"));
+            BufferedImage base = ImageIO.read(new File(decalsPath + currDecal + ".png"));
             for (int w = 0; w < base.getWidth(); w++) {
                 for (int h = 0; h < base.getHeight(); h++) {
                     Color currentPixel = new Color(base.getRGB(w, h), true);
