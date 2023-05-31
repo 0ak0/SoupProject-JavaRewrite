@@ -37,6 +37,6 @@ public class background {
     }
 
     public static void main(String[] args) throws IOException {
-        ImageIO.write(generateBackground(), "png", new File("imageout/bg.png"));
+        ImageIO.write(generateBackground(), "png", new File("imageout" + File.separator + "bg.png"));
     }
 }

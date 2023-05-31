@@ -24,7 +24,7 @@ public class canbody {
             System.out.println("please use arg for color (hex)"); // Allow for hex codes in testing with args
         }
 
-        BufferedImage bodyTemplate = ImageIO.read(new File("../../images/body.png")); // See builder.java:37 comment
+        BufferedImage bodyTemplate = ImageIO.read(new File(".." + File.separator + ".." + File.separator + "images" + File.separator + "body.png")); // See builder.java:37 comment
 
         String colorHex = args[0];
         if(colorHex.startsWith("#") == false) {
@@ -34,6 +34,6 @@ public class canbody {
         Color mainArgConvert = (Color.decode(colorHex));
 
         BufferedImage newBody = creator(bodyTemplate, mainArgConvert);
-        ImageIO.write(newBody, "png", new File("imageout/c_body.png"));     
+        ImageIO.write(newBody, "png", new File("imageout" + File.separator + "c_body.png"));     
     }
 }

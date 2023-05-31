@@ -35,7 +35,7 @@ public class decals {
             }
 
 
-            BufferedImage base = ImageIO.read(new File("../../images/decals/" + currDecal + ".png"));
+            BufferedImage base = ImageIO.read(new File(".." + File.separator + ".." + File.separator + "images" + File.separator + "decals" + File.separator + "" + currDecal + ".png"));
             for (int w = 0; w < base.getWidth(); w++) {
                 for (int h = 0; h < base.getHeight(); h++) {
                     Color currentPixel = new Color(base.getRGB(w, h), true);
@@ -63,6 +63,6 @@ public class decals {
             num = (int) Math.floor(Math.random() * 8);
         }
 
-        ImageIO.write(allStickers(num), "png", new File("imageout/decals.png"));
+        ImageIO.write(allStickers(num), "png", new File("imageout" + File.separator + "decals.png"));
     }
 }

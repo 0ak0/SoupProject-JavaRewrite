@@ -19,7 +19,7 @@ public class builder {
         int times = 1;
         for(int x = iterations; x != 0; x--) {
             String fileName = "can" + x;
-            File finalFile = new File("../../output/" + fileName + ".png");
+            File finalFile = new File(".." + File.separator + ".." + File.separator + "output" + File.separator + "" + fileName + ".png");
             ImageIO.write(imageBuilder(), "png", finalFile);
             System.out.println("Finished iteration no. " + times);
             times++;
@@ -35,11 +35,11 @@ public class builder {
 
         Color bodyColor = new Color(red, green, blue, 255);
 
-        BufferedImage bodyBase = ImageIO.read(new File("../../images/body.png"));
+        BufferedImage bodyBase = ImageIO.read(new File(".." + File.separator + ".." + File.separator + "images" + File.separator + "body.png"));
         BufferedImage body = canbody.creator(bodyBase, bodyColor);
-        BufferedImage lid = ImageIO.read(new File("../../images/lid.png")); // Terrible way to do this but this path and filename probably won't change
-        BufferedImage blip = ImageIO.read(new File("../../images/botlip.png"));
-        BufferedImage shade = ImageIO.read(new File("../../images/shade.png"));
+        BufferedImage lid = ImageIO.read(new File(".." + File.separator + ".." + File.separator + "images" + File.separator + "lid.png")); // Terrible way to do this but this path and filename probably won't change
+        BufferedImage blip = ImageIO.read(new File(".." + File.separator + ".." + File.separator + "images" + File.separator + "botlip.png"));
+        BufferedImage shade = ImageIO.read(new File(".." + File.separator + ".." + File.separator + "images" + File.separator + "shade.png"));
         BufferedImage bg = background.generateBackground();
         BufferedImage decal = decals.allStickers((int) Math.floor(Math.random() * 8));
 
